@@ -76,6 +76,7 @@ if authentication_status:
             images = response['images']
             for image in images:
                 webbrowser.open(image)
+                st.write(response["images"][image])
 
             ## generate images (byte output)
             # response = generate_image('San Francisco and Chicago mixed', num_image=2, size=SIZES[1], output_format='b64_json')
